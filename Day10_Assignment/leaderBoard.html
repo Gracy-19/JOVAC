@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const names = ["Grace", "Arpit", "Lokendra", "Satyam"];
+        const ol = document.createElement("ol");
+
+        // Loop through the names and create list items (li) for each
+        names.forEach(name => {
+            const li = document.createElement("li");
+            li.textContent = name;
+            ol.appendChild(li);
+        });
+
+        // Append the ordered list to the body (or any other container)
+        document.body.appendChild(ol);
+    </script>
+
+</body>
+
+</html>
